@@ -1,0 +1,20 @@
+.dropdown {
+  list-style: none;
+  position: absolute;
+  display: flex;
+  padding: 14px 14px 12px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 205px;
+
+  overflow: scroll;
+  max-height: 250px;
+  gap: 12px;
+  z-index: 10;
+
+  border-radius: 2px 2px 4px 4px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(147, 147, 147, 0.15);
+}
+
