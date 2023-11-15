@@ -10,8 +10,6 @@ interface DataGridProps {
 }
 
 export const DataGrid = ({ data, columns }: DataGridProps) => {
-  console.log(data);
-  console.log(columns);
   return (
     <div className={style.container}>
       <table className={style.table}>
