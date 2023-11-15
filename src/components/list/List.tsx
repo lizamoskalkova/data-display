@@ -16,9 +16,12 @@ export const List = (props: ListProps) => {
 
   useEffect(() => {
     const filterData = (input: string) => {
-      return data.filter((item) =>
-        item.toLowerCase().includes(input.toLowerCase())
-      );
+      return data.filter((item) => {
+        if (!input) {
+          setSelected(input);
+        }
+        return item.toLowerCase().includes(input.toLowerCase());
+      });
     };
     setFilteredData(filterData(inputValue));
   }, [inputValue, data]);
